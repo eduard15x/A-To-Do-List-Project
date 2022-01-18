@@ -17,11 +17,11 @@ const removeLast = document.querySelector('.btn-remove-task');
 
 
 // // Creating 2 question for the user and changing in the browser user's information; name and current day
-// const askForName = prompt('What is your name?');
-// const askForDay = prompt('What day is today?');
+const askForName = prompt('What is your name?');
+const askForDay = prompt('What day is today?');
 
-// userName.textContent = askForName.toUpperCase();
-// currentDay.textContent = askForDay.toUpperCase();
+userName.textContent = askForName.toUpperCase();
+currentDay.textContent = askForDay.toUpperCase();
 
 
 //I. Adding an event listener to the btnList to display and hide the containerList
