@@ -1,0 +1,156 @@
+/* Global properties for sizing */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(199, 194, 172, 0.596);
+    font-size: 25px;
+    font-weight:800;
+    color: rgb(248, 241, 230);
+    justify-content: center;
+}
+
+/* The whole body container */
+.wrapper-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #4c6da7;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 4px 4px 50px rgb(103, 108, 126) ;
+}
+
+
+
+/* The label container with input and button for adding takss*/
+/* 
+*/
+.label-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.input-main {
+    border: none;
+    font-size: 30px;
+    width: 90%;
+}
+.btn-main-input {
+    border: none;
+    background-color: #3e79e7;
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+.btn-main-input:hover {
+    background-color: #afd161;
+}
+
+
+
+
+/* Button Hide/Show list */
+/* 
+ */
+.btn-toggle-for-list {
+    font-size: 30px;
+    background-color: #8ca1c4;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin: 20px 0px -25px 0px;
+}
+.btn-toggle-for-list:hover {
+    background-color: #afd161;
+}
+
+
+
+/* Container list  */
+ul{
+    text-align:left;
+    color: black;
+    font-size: 25px;
+    padding:0px;
+    list-style: none;
+}
+li { 
+    display: flex;
+    align-items: center;
+    padding:20px;
+    background-color: beige;
+    border:1px solid rgb(151, 150, 150);
+    
+}
+
+
+
+/* Button remove taks */
+.btn-remove-task {
+    border: none;
+    border-radius: 10px;
+    float: left;
+    background-color: #e76dbf;
+    cursor: pointer;
+    font-size: 25px; font-weight: bold;
+    margin: 20px 0px 20px 15px;
+}
+.btn-remove-task:hover {
+    background: red;
+}
+
+
+.li-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.li-box-check {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+} 
+
+/*Space between checkbox and text*/
+.myCheckBox {
+    margin-right: 20px;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.button-remove-current-task {
+    font-size: 20px; font-weight: bold;
+    background-color: #fc8249;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-remove-current-task:hover {
+    background-color: #6bf57d;
+}
+
+
+
+/* ADDING MEDIA QUERRY FOR RESPONSIVE LAYOUT IN BROWSER */
+@media only screen and (min-width: 620px) {
+    .wrapper-container {
+        width: 70%;
+    }
+
+    .input-main {
+        font-size: 30px;
+        width: 50%; 
+    }
+
+    
+}
+
+
