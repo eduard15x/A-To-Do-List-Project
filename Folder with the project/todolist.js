@@ -1,9 +1,9 @@
 //Declaring variables for:
 
 //1.User name
-const userName = document.querySelector('#user-name');
+const userName = document.getElementById('userName');
 //2.Current day for the tasks
-const currentDay = document.querySelector('#current-day');
+const currentDay = document.getElementById('currentDay');
 //3. Input white bar from the main
 const inputMain = document.querySelector('.input-main');
 //4.Button main for adding task for input value
@@ -14,6 +14,7 @@ const btnList = document.querySelector('.btn-toggle-for-list');
 const containerList = document.querySelector('.container-list');
 //7.Button for removing last task
 const removeLast = document.querySelector('.btn-remove-task');
+//8.Declaring the userName for prompt questiondd
 
 
 // // Creating 2 question for the user and changing in the browser user's information; name and current day
