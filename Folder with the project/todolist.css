@@ -19,12 +19,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #4c6da7;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
     justify-content: center;
-    box-shadow: 4px 4px 50px rgb(103, 108, 126) ;
+    box-shadow: 0px 0px 200px rgb(102, 112, 148) ;
 }
-
 
 
 /* The label container with input and button for adding takss*/
@@ -40,14 +39,14 @@ body {
     font-size: 30px;
     width: 90%;
 }
-.btn-main-input {
+.btn-add-input {
     border: none;
     background-color: #3e79e7;
     cursor:pointer;
     font-size: 25px;
     font-weight: bold;
 }
-.btn-main-input:hover {
+.btn-add-input:hover {
     background-color: #afd161;
 }
 
@@ -58,7 +57,8 @@ body {
 /* 
  */
 .btn-toggle-for-list {
-    font-size: 30px;
+    font-size: 20px;
+    height: 60px;
     background-color: #8ca1c4;
     cursor: pointer;
     border: none;
@@ -74,7 +74,7 @@ body {
 /* Container list  */
 ul{
     text-align:left;
-    color: black;
+    color: rgb(58, 56, 56);
     font-size: 25px;
     padding:0px;
     list-style: none;
@@ -82,6 +82,7 @@ ul{
 li { 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding:20px;
     background-color: beige;
     border:1px solid rgb(151, 150, 150);
@@ -91,31 +92,22 @@ li {
 
 
 /* Button remove taks */
-.btn-remove-task {
+.btn-remove-all-tasks {
     border: none;
     border-radius: 10px;
     float: left;
-    background-color: #e76dbf;
+    background-color: #828385;
     cursor: pointer;
     font-size: 25px; font-weight: bold;
     margin: 20px 0px 20px 15px;
+    color: #27282b;
 }
-.btn-remove-task:hover {
+.btn-remove-all-tasks:hover {
     background: red;
 }
 
 
-.li-container {
-    display: flex;
-    justify-content: space-between;
-}
 
-
-.li-box-check {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-} 
 
 /*Space between checkbox and text*/
 .myCheckBox {
@@ -126,16 +118,18 @@ li {
 }
 
 .button-remove-current-task {
+    display: flex;
     font-size: 20px; font-weight: bold;
     background-color: #fc8249;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .button-remove-current-task:hover {
     background-color: #6bf57d;
+    cursor: pointer;
 }
+
 
 
 

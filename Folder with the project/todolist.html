@@ -10,25 +10,23 @@
 
     <div class="wrapper-container">
         <header>
-            <h1>Hi, <span id="userName">${name}</span></h1>
-            <p>Is <span id="currentDay">${day}</span> and these are your tasks for today</p>
+            <h1>Hi, <span id="user-name">NAME</span></h1>
+            <p>Is <span id="current-day">DAY</span> and these are your tasks for today</p>
             <div class="label-container">
-                <label for="main"></label> 
                 <input type="text" class="input-main">
-                <button class="btn-main-input">Add task</button>    
+                <button class="btn-add-input">Add task</button>    
             </div>
         </header>
 
         <button class="btn-toggle-for-list">Hide list</button>
 
         <div class="container-list">
-            <button class="btn-remove-task">Remove last task</button>
+            <ul class="list-items">
+            </ul>
+            <button class="btn-remove-all-tasks">Remove all tasks</button>
         </div>
 
-        <footer>
-        </footer>
     </div>
-<!--this div above is from the first after header with the className wrapper-container-->
 
 
 <script src="todolist.js"></script>
